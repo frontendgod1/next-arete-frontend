@@ -1,0 +1,1291 @@
+$frogyellowPrimary: #fed401;
+$poseidonSecondary: #07060c;
+
+@font-face {
+  font-family: BenguiatStd-Book;
+  src: url(../public/fonts/BenguiatStd-Bold.otf);
+}
+@font-face {
+  font-family: NeueHaasDisplayBold;
+  src: url(../public/fonts/NeueHaasDisplayBold.otf);
+}
+@font-face {
+  font-family: NeueHaasDisplayBlack;
+  src: url(../public/fonts/NeueHaasDisplayBlack.otf);
+}
+@font-face {
+  font-family: NeueHaasDisplayMediu;
+  src: url(../public/fonts/NeueHaasDisplayMediu.otf);
+}
+@font-face {
+  font-family: NeueHaasDisplayThin;
+  src: url(../public/fonts/NeueHaasDisplayThin.otf);
+}
+@font-face {
+  font-family: NeueHaasDisplayLight;
+  src: url(../public/fonts/NeueHaasDisplayLight.otf);
+}
+@font-face {
+  font-family: NeueHaasDisplayRoman;
+  src: url(../public/fonts/NeueHaasDisplayRoman.otf);
+}
+@font-face {
+  font-family: Industry-Bold;
+  src: url(../public/fonts/Industry-Bold.otf);
+}
+
+.Industry-font {
+  font-family: Industry-Bold;
+}
+.frog-nav-logo {
+  display: none;
+}
+
+.poseidon.apply-frog-lacrosse {
+  color: #8e8e8e;
+
+  p,
+  a {
+    font-family: NeueHaasDisplayMediu;
+  }
+  .section-title,
+  .section-title span {
+    font-family: Industry-Bold;
+  }
+  .nav-logo {
+    display: none;
+  }
+  .nav-logo.frog-nav-logo {
+    display: block;
+  }
+
+  .navbar.navbar-dark {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-family: NeueHaasDisplayRoman;
+        }
+      }
+    }
+  }
+  .frog-lacrosse-text {
+    position: relative;
+    z-index: 100;
+  }
+
+  .apply-now-btn {
+    margin-top: -60px;
+    position: relative;
+    z-index: 999;
+    font-family: NeueHaasDisplayMediu;
+  }
+  .bg-primary {
+    background-color: $frogyellowPrimary !important;
+  }
+  .btn-secondary {
+    background-color: $poseidonSecondary;
+    border-color: $poseidonSecondary;
+  }
+  .btn-outline-primary {
+    border-color: $frogyellowPrimary;
+    color: $frogyellowPrimary;
+    &:hover {
+      background-color: $poseidonSecondary;
+      border-color: $poseidonSecondary;
+      color: #ffffff;
+    }
+  }
+  a {
+    color: $frogyellowPrimary;
+    text-decoration: none;
+  }
+  .btn-primary {
+    background-color: $frogyellowPrimary;
+    border-color: $frogyellowPrimary;
+    color: #ffffff;
+
+    &:hover {
+      background-color: $poseidonSecondary;
+      border-color: $poseidonSecondary;
+      color: #ffffff;
+    }
+  }
+  .section-title {
+    color: #07060c;
+    font-family: "Evogria", sans-serif;
+    font-weight: normal !important;
+    letter-spacing: 0;
+    font-size: 48px;
+    margin-bottom: 0;
+    span {
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        display: block;
+        width: 99px;
+        height: 3px;
+        background-color: $frogyellowPrimary;
+      }
+    }
+  }
+  ul.poseidon-list {
+    list-style: none;
+    padding-left: 20px;
+    li {
+      position: relative;
+      margin: 5px 0 16px;
+      font-family: NeueHaasDisplayRoman;
+      font-weight: 500;
+      font-size: 22px;
+      ul {
+        margin-top: 6px;
+        padding-left: 20px;
+        li {
+          margin: 0 0 12px;
+          font-size: 20px;
+          font-family: NeueHaasDisplayRoman;
+        }
+      }
+      &::before {
+        content: "";
+        background-color: $frogyellowPrimary;
+        width: 13px;
+        height: 13px;
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 6px;
+        border-radius: 50%;
+      }
+      ul {
+        list-style: none;
+
+        li {
+          &::before {
+            background-color: $poseidonSecondary;
+            width: 8px;
+            height: 8px;
+            left: -16px;
+            top: 7px;
+          }
+        }
+      }
+    }
+    &.white {
+      li {
+        &::before {
+          background-color: #ffffff;
+        }
+        ul {
+          li {
+            &::before {
+              background-color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section.why-poseidon {
+    position: relative;
+    z-index: 0;
+    margin-top: -60px;
+    background-color: #caf2f1;
+    background-image: url(/images/poseidon/frog-sec-two-background.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    .why-poseidon-images {
+      position: relative;
+      padding-top: 20%;
+      margin-top: 40px;
+      .why-poseidon {
+        max-width: 511px;
+        width: 100%;
+        height: auto;
+        border-radius: 22px;
+      }
+      .why-poseidon-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .why-poseidon-2 {
+        position: relative;
+        left: 35%;
+        z-index: 2;
+      }
+    }
+    .container {
+      max-width: 1660px;
+    }
+    .why-frog-title {
+      color: $frogyellowPrimary;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+    .why-frog-title span::after {
+      content: "";
+      display: block;
+      width: 99px;
+      height: 3px;
+      margin-top: 6px;
+      background-color: $frogyellowPrimary;
+    }
+  }
+  .poseidon-teams::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 4, 4, 0.79);
+    display: block;
+  }
+  .section.poseidon-teams {
+    background-image: url(/images/poseidon/our-teams-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 999999;
+    .container {
+      padding: 89px 12px 165px;
+    }
+    .our-teames-title {
+      margin-bottom: 38px;
+      font-family: Industry-Bold;
+      font-size: 64px;
+      color: #ffffff;
+      position: relative;
+    }
+    .team-names.team-names-list {
+      margin-bottom: 93px;
+      .team-name {
+        font-family: Industry-Bold;
+        font-weight: normal;
+        font-size: 74px;
+        line-height: 0.8;
+        letter-spacing: 0;
+        padding: 0 40px;
+        color: #ffffff;
+        display: inline-block;
+        border-right: 2px solid #fed401;
+        @media screen and (max-width: 767px) {
+          font-size: 24px;
+          line-height: 24px;
+          letter-spacing: 0px;
+          padding: 0 8px;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+  .section.poseidon-season-format {
+    background-image: url(/images/poseidon/season-formation-bg.jpg);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+    margin-top: -80px;
+    padding-top: 100px;
+    .container {
+      padding-top: 150px;
+      max-width: 1608px;
+      padding-bottom: 0;
+    }
+    .season-tabs {
+      .tab-headers {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+        .tab-header {
+          width: 32%;
+          padding: 100px 15px;
+          margin-bottom: 20px;
+          text-align: center;
+          font-family: Industry-Bold;
+          color: #ffffff;
+          font-size: 73px;
+          line-height: 1;
+          letter-spacing: 0px;
+          background: rgba(7, 6, 12, 0.9);
+          cursor: pointer;
+          transition: ease 0.2s all;
+          &.tab-header-2 {
+            background-color: $frogyellowPrimary;
+          }
+          &.tab-header-3 {
+            background-color: #ffffff;
+            color: $poseidonSecondary;
+          }
+          &.active {
+            padding-bottom: 120px;
+            margin-bottom: 0;
+          }
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            padding: 10px 10px;
+            margin-bottom: 5px;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: 3px;
+
+            &.active {
+              padding-bottom: 10px;
+              margin-bottom: 5px;
+              border: 1px solid #000;
+            }
+          }
+        }
+      }
+      .tab-body {
+        .single-tab {
+          display: none;
+          color: #ffffff;
+          background: rgba(7, 6, 12, 0.9);
+          padding: 28px 24px 0;
+          &.single-tab-2 {
+            background-color: $frogyellowPrimary;
+          }
+          &.single-tab-3 {
+            background-color: #ffffff;
+            color: $poseidonSecondary;
+            .mini-title {
+              color: $poseidonSecondary;
+            }
+          }
+          .mini-title.smail-mini-title {
+            font-size: 37px;
+          }
+          .mini-title {
+            font-family: Industry-Bold;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 40px;
+            line-height: 1;
+            margin-bottom: 20px;
+            @media screen and (max-width: 767px) {
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .section.poseidon-blog {
+    background-image: url(/images/poseidon/poseidon-blog.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    .blog-post {
+      background: #ffffff;
+      box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.05);
+      border-radius: 22px;
+      .img {
+        border-radius: 22px 22px 0 0;
+      }
+    }
+  }
+  .section.arete-network {
+    background-image: url(/images/poseidon/arete-network-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    .arete-network-img {
+      border-radius: 50%;
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto;
+      display: block;
+      @media screen and (max-width: 767px) {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .section.arete-partner-club {
+    background-image: url(/images/poseidon/arete-partner-club-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    .container {
+      padding-bottom: 52px;
+    }
+    .section-title {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      font-size: 60px;
+      margin-bottom: 63px;
+      font-family: Industry-Bold;
+    }
+    .arete-partner-club-frog {
+      position: absolute;
+      pointer-events: none;
+      left: -10%;
+      top: -52%;
+      bottom: -22%;
+      z-index: 99999;
+      width: 100%;
+      max-width: 816px;
+    }
+  }
+  .newsletter {
+    background-image: url(/images/poseidon/stay-updated-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 93px;
+    .container {
+      margin: 0 auto -100px;
+      border-radius: 22px;
+      z-index: 3;
+      background-color: #0071b9;
+      padding-top: 57px;
+      padding-bottom: 57px;
+      .newsletter-inner {
+        flex-direction: column;
+        margin: auto;
+        max-width: 792px;
+        .h2.icon-text {
+          font-size: 48px;
+          font-family: Industry-Bold;
+          margin-right: 0;
+          margin-bottom: 49px !important;
+        }
+        .input-group {
+          input {
+            font-size: 24px;
+            padding: 21px 30% 21px 24px;
+          }
+          .input-group-btn {
+            border-radius: 12px;
+            top: 0;
+            right: 0;
+            height: 100%;
+            .btn {
+              background: #fed401;
+              border-radius: 12px;
+              font-size: 24px;
+              font-family: NeueHaasDisplayRoman;
+              padding-left: 55px;
+              padding-right: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-poseidon {
+    background-color: #124b92;
+    padding-top: 100px;
+  }
+  .bottom-bar {
+    .container {
+      border-top: 1px solid #ffffff;
+    }
+    background-color: #124b92;
+  }
+
+  .section.hero-poseidon {
+    background-image: url(/images/poseidon/frog-lacrosse-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    .frog-poseidon-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: block;
+    }
+    .poseidon-overlay {
+      position: absolute;
+      pointer-events: none;
+      top: unset;
+      left: 60px;
+      bottom: -50px;
+      max-width: 850px;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+      @media screen and (max-width: 767px) {
+        left: auto;
+        right: 60%;
+        height: 80%;
+        top: 15%;
+      }
+    }
+    .container {
+      z-index: 2;
+      position: relative;
+    }
+    .sub-title {
+      font-family: "Evogria", sans-serif;
+      font-weight: normal !important;
+      font-size: 70px;
+      line-height: 85px;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    .container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .hero-img {
+      margin-top: 25px;
+    }
+    .title {
+      font-family: "Evogria", sans-serif;
+      font-weight: normal !important;
+      font-size: 70px;
+      line-height: 80px;
+      letter-spacing: 4px;
+
+      span {
+        font-size: 140%;
+        letter-spacing: 15px;
+        padding-left: 14px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 50px 25px 0;
+      text-align: center;
+      .title {
+        font-size: 35px;
+        line-height: 45px;
+        span {
+          letter-spacing: 11px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .poseidon-training {
+    background-image: url(/images/poseidon/frog-training-background.jpg);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding: 210px 0 100px;
+    margin-top: -50px;
+    .container {
+      max-width: 1608px;
+      padding-top: 88px;
+    }
+    .calendar-box {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.04);
+      width: 100%;
+      max-width: 90%;
+      a {
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    .frog-training-right {
+      .section-title {
+        text-transform: uppercase;
+        span::after {
+          margin-top: 6px;
+        }
+      }
+      p {
+        font-family: NeueHaasDisplayRoman;
+        font-size: 24px;
+        line-height: 2;
+      }
+    }
+    .frog-mini-img {
+      position: absolute;
+      right: 3%;
+      bottom: -22%;
+      z-index: 99999;
+      width: 100%;
+      max-width: 637px;
+      pointer-events: none;
+    }
+  }
+  .season-tabs {
+    position: relative;
+    z-index: 10;
+  }
+  .arete-network {
+    .container {
+      max-width: 1608px;
+    }
+    .arete-network-text {
+      .section-title.arete-font {
+        color: #fff;
+        margin-bottom: 13px;
+        font-size: 93px;
+        line-height: 1;
+      }
+      p.text {
+        font-family: NeueHaasDisplayRoman;
+        font-size: 31px;
+        line-height: 1.4;
+      }
+      a.btn-primary {
+        font-size: 32px;
+      }
+    }
+  }
+  .arete-network::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.79);
+    display: block;
+  }
+}
+
+// ------------------- footer customs css -------------
+.frog-footer-logo,
+.frog-pera-text,
+.frog-footer-icon,
+.frog-contact-text {
+  display: none;
+}
+
+.poseidon.apply-frog-lacrosse {
+  .main-footer {
+    .container {
+      max-width: 1378px;
+    }
+    .footer-menu-col {
+      padding-bottom: 25px;
+      .footer-logo,
+      .text,
+      .font-awesome-icon,
+      .contact-text {
+        display: none;
+      }
+      .frog-footer-logo,
+      .frog-pera-text,
+      .frog-footer-icon,
+      .frog-contact-text {
+        display: block;
+      }
+      .footer-title {
+        font-family: Industry-Bold;
+        font-size: 32px;
+      }
+      .frog-pera-text {
+        font-family: NeueHaasDisplayLight;
+        font-size: 20px;
+      }
+      .footer-line {
+        display: none;
+      }
+      .frog-footer-icon {
+        margin-right: 8px;
+      }
+      .nav-link {
+        font-size: 18px;
+        font-family: NeueHaasDisplayLight;
+        color: #ffffff;
+        font-weight: 400;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .footer-menu-col.col-lg-6 {
+      width: 40%;
+    }
+    .footer-menu-col.col-lg-3 {
+      width: 40%;
+    }
+    .footer-menu-col:last-child {
+      width: 20%;
+    }
+  }
+  .bottom-bar {
+    margin-top: -2px;
+    position: relative;
+    .container {
+      max-width: 1584px;
+      .frog-bottom-bar-left {
+        width: 100%;
+        p {
+          font-family: NeueHaasDisplayLight;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+      .frog-bottom-bar-right {
+        display: none;
+      }
+    }
+  }
+}
+
+.poseidon.apply-frog-lacrosse {
+  @media screen and (max-width: 1800px) {
+    .section.hero-poseidon {
+      .poseidon-overlay {
+        max-width: 40%;
+      }
+    }
+    .section.why-poseidon {
+      background-size: cover;
+      margin-bottom: -80px;
+      .container {
+        padding-bottom: 130px;
+      }
+    }
+    .section.poseidon-season-format {
+      background-size: 105% auto;
+      background-position: right;
+      margin-top: -100px;
+    }
+    .poseidon-training {
+      .container {
+        padding-top: 70px;
+      }
+    }
+    .section.arete-partner-club {
+      .arete-partner-club-frog {
+        max-width: 43%;
+        top: -45%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1700px) {
+    .section.poseidon-season-format {
+      margin-top: -130px;
+    }
+    .poseidon-training {
+      margin-top: -57px;
+      .frog-mini-img {
+        right: 0;
+      }
+      .container {
+        padding-top: 55px;
+      }
+    }
+    .section.why-poseidon {
+      .why-poseidon-images {
+        .why-poseidon {
+          width: 66%;
+        }
+        .why-poseidon-2 {
+          left: 33%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    section.section {
+      div.container {
+        max-width: 1320px !important;
+      }
+    }
+    .section.poseidon-season-format {
+      background-size: 103% auto;
+      margin-top: -100px;
+      .container {
+        padding-top: 150px;
+      }
+    }
+    .poseidon-training {
+      .frog-mini-img {
+        max-width: 37%;
+      }
+      .container {
+        padding-top: 8px;
+      }
+    }
+    .section.poseidon-teams {
+      .our-teames-title {
+        font-size: 50px;
+      }
+      .team-names.team-names-list {
+        .team-name {
+          font-size: 48px;
+          padding: 0 25px;
+          line-height: 1;
+        }
+      }
+    }
+    .section.arete-partner-club {
+      .container {
+        padding-bottom: 0;
+      }
+      .arete-partner-club-frog {
+        max-width: 36%;
+        top: -14%;
+      }
+    }
+    .frog-lacrosse-text {
+      max-width: 400px;
+    }
+    .apply-now-btn {
+      margin-top: -30px;
+    }
+    .section.poseidon-season-format {
+      .season-tabs {
+        .tab-headers {
+          .tab-header {
+            font-size: 40px;
+          }
+        }
+        .tab-body {
+          .single-tab {
+            .mini-title {
+              font-size: 24px;
+              line-height: 1.2;
+            }
+            .mini-title.smail-mini-title {
+              line-height: 1.2;
+              font-size: 24px;
+            }
+          }
+        }
+        ul.poseidon-list {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .arete-network {
+      .arete-network-text {
+        .section-title.arete-font {
+          font-size: 50px;
+        }
+        p.text {
+          font-size: 24px;
+        }
+        a.btn-primary {
+          font-size: 24px;
+        }
+      }
+    }
+    ul.poseidon-list {
+      li {
+        font-size: 16px;
+        margin: 5px 0;
+        ul {
+          li {
+            font-size: 16px;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .poseidon-training {
+      padding-top: 200px;
+      .container {
+        padding-top: 0px;
+      }
+    }
+    .section.arete-partner-club {
+      .arete-partner-club-frog {
+        top: -5%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .poseidon-training {
+      padding-top: 192px;
+      .container {
+        padding-top: 0px;
+      }
+      .frog-training-right {
+        p {
+          font-size: 16px;
+          line-height: 1.4;
+        }
+      }
+    }
+    .section.arete-partner-club {
+      .arete-partner-club-frog {
+        top: 2%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1499px) {
+    .section.poseidon-season-format {
+      margin-top: -160px;
+    }
+    .poseidon-training {
+      margin-top: -37px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .section.poseidon-season-format {
+      background-size: 121% auto;
+      margin-top: -63px;
+      .container {
+        padding-top: 150px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1399px) {
+    section.section {
+      div.container {
+        max-width: 1140px !important;
+      }
+    }
+    .section.poseidon-season-format {
+      background-size: 128% auto;
+      margin-top: -100px;
+    }
+  }
+
+  @media screen and (max-width: 1360px) {
+    .poseidon-training {
+      padding-top: 154px;
+    }
+    .section.arete-partner-club {
+      .arete-partner-club-frog {
+        top: 8%;
+      }
+    }
+    .section.poseidon-season-format {
+      margin-top: -60px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .poseidon-training {
+      padding-top: 154px;
+    }
+    .section.arete-partner-club {
+      .arete-partner-club-frog {
+        top: 8%;
+      }
+    }
+    .section.poseidon-season-format {
+      margin-top: -100px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .poseidon-training {
+      padding-top: 130px;
+    }
+    .arete-network {
+      .arete-network-text {
+        p.text {
+          font-size: 16px;
+        }
+        a.btn-primary {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    section.section {
+      div.container {
+        max-width: 960px !important;
+      }
+    }
+    .section.poseidon-teams {
+      .container {
+        padding-bottom: 100px;
+      }
+      .team-names.team-names-list {
+        .team-name {
+          padding: 0 15px;
+        }
+      }
+    }
+
+    .section.poseidon-season-format {
+      background-size: 168% auto;
+      margin-top: -100px;
+    }
+    .section.hero-poseidon {
+      .poseidon-overlay {
+        max-width: 45%;
+        left: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    section.section {
+      div.container {
+        max-width: 720px !important;
+      }
+    }
+    .poseidon-training {
+      .calendar-box {
+        max-width: 100%;
+      }
+    }
+    .section.hero-poseidon {
+      .poseidon-overlay {
+        max-width: 50%;
+      }
+    }
+    .section.why-poseidon {
+      background-image: url(/images/poseidon/frog-sec-two-background-mobile.png);
+      background-size: auto;
+      background-color: #fff;
+      position: relative;
+      margin-bottom: 0;
+      .container {
+        padding-top: 50px;
+        padding-bottom: 10px;
+      }
+    }
+    .section.why-poseidon::before {
+      content: "";
+      background-image: url(/images/poseidon/frog-sec-two-bottom.png);
+      background-size: auto;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      display: block;
+    }
+    .section.poseidon-season-format {
+      position: relative;
+      background-image: none;
+      .container {
+        padding-top: 100px;
+      }
+    }
+    .poseidon-season-format::after {
+      content: "";
+      background-image: url(/images/poseidon/frog-sec-two-bottom.png);
+      background-size: auto;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      display: block;
+    }
+    .poseidon-season-format::before {
+      content: "";
+      background-image: url(/images/poseidon/frog-sec-two-background-mobile.png);
+      background-size: auto;
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      bottom: 17px;
+      display: block;
+    }
+    .poseidon-training {
+      margin-top: -17px;
+      padding-bottom: 40px;
+      .frog-mini-img {
+        max-width: 50%;
+        bottom: -13%;
+      }
+    }
+    .section.arete-network {
+      .arete-network-img {
+        margin-bottom: 20px;
+      }
+    }
+    .section.arete-partner-club {
+      padding-bottom: 40px;
+      .section-title {
+        max-width: 100%;
+      }
+    }
+    .newsletter {
+      padding-top: 0;
+      .container {
+        .newsletter-inner {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    section.section {
+      div.container {
+        max-width: 540px !important;
+      }
+    }
+    .section-title {
+      font-size: 30px;
+    }
+    .poseidon-training {
+      padding-bottom: 50px;
+      .frog-training-right {
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .section-title {
+          margin-bottom: 20px !important;
+        }
+      }
+      .calendar-box {
+        a {
+          max-width: 100%;
+        }
+      }
+    }
+    .arete-network {
+      .arete-network-text {
+        .section-title.arete-font {
+          font-size: 30px;
+        }
+      }
+    }
+    .section.hero-poseidon {
+      .poseidon-overlay {
+        height: auto;
+        bottom: -20px;
+        top: unset;
+        max-width: 50%;
+      }
+      .frog-lacrosse-text {
+        max-width: 100%;
+      }
+    }
+    .nav-logo.frog-nav-logo {
+      max-width: 94px;
+    }
+    .section.poseidon-teams {
+      .our-teames-title {
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      .team-names.team-names-list {
+        margin-bottom: 25px;
+        .team-name {
+          font-size: 24px;
+          padding: 0 8px;
+        }
+      }
+      .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+    }
+    .section.why-poseidon::before {
+      height: 50px;
+    }
+    .poseidon-season-format::after {
+      height: 50px;
+    }
+    .section.poseidon-season-format {
+      .container {
+        padding-top: 60px;
+      }
+      .mb-5 {
+        margin-bottom: 20px !important;
+      }
+    }
+    .section.poseidon-season-format {
+      .season-tabs {
+        .tab-headers {
+          .tab-header {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .poseidon-training {
+      padding-bottom: 80px;
+      padding-top: 80px;
+      .frog-mini-img {
+        bottom: -8%;
+      }
+    }
+    .section.arete-partner-club {
+      .section-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      .arete-partner-club-frog {
+        display: none;
+      }
+    }
+    .newsletter {
+      margin-left: 10px;
+      margin-right: 10px;
+      .container {
+        .newsletter-inner {
+          .h2.icon-text {
+            font-size: 24px;
+            margin-bottom: 20px !important;
+          }
+          .input-group {
+            height: 50px;
+            input {
+              padding: 10px 35% 10px 15px;
+              font-size: 16px;
+            }
+            .input-group-btn {
+              .btn {
+                font-size: 16px;
+                padding-left: 15px;
+                padding-right: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    section.section {
+      div.container {
+        max-width: 100% !important;
+      }
+    }
+  }
+}

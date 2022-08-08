@@ -1,0 +1,568 @@
+$medusaPrimary: #ce0e2d;
+$medusaSecondary: #021d49;
+.medusa {
+  color: #8e8e8e;
+  .bg-primary {
+    background-color: $medusaPrimary !important;
+  }
+  .btn-secondary {
+    background-color: $medusaSecondary;
+    border-color: $medusaSecondary;
+  }
+  .btn-outline-primary {
+    border-color: $medusaPrimary;
+    color: $medusaPrimary;
+    &:hover {
+      background-color: $medusaSecondary;
+      border-color: $medusaSecondary;
+      color: #ffffff;
+    }
+  }
+  a {
+    color: $medusaPrimary;
+    text-decoration: none;
+  }
+  .text-primary {
+    color: $medusaPrimary !important;
+  }
+  .text-secondary {
+    color: $medusaSecondary !important;
+  }
+  .btn-primary {
+    background-color: $medusaPrimary;
+    border-color: $medusaPrimary;
+    color: #ffffff;
+
+    &:hover {
+      background-color: $medusaSecondary;
+      border-color: $medusaSecondary;
+      color: #ffffff;
+    }
+  }
+  .md-rounded {
+    border-radius: 20px;
+  }
+  .md-calendar {
+    margin-top: 150px;
+  }
+  .md-section-title {
+    // color: $medusaPrimary;
+    font-family: BenguiatStd-Book;
+    font-weight: bolder !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    span {
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        display: block;
+        width: 75px;
+        height: 3px;
+        background-color: $medusaPrimary;
+      }
+    }
+  }
+  ul.medusa-list {
+    list-style: none;
+    padding-left: 20px;
+    li {
+      position: relative;
+      margin: 5px 0;
+      &::before {
+        content: "";
+        background-color: $medusaPrimary;
+        width: 13px;
+        height: 13px;
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 6px;
+        border-radius: 50%;
+      }
+      ol {
+        list-style: decimal;
+        li {
+          &::before {
+            width: 0px;
+            height: 0px;
+          }
+        }
+      }
+      ul {
+        list-style: none;
+
+        li {
+          &::before {
+            background-color: $medusaSecondary;
+            width: 8px;
+            height: 8px;
+            left: -16px;
+            top: 7px;
+          }
+        }
+      }
+    }
+    &.white {
+      li {
+        &::before {
+          background-color: #ffffff;
+        }
+        font-weight: 600 !important;
+
+        ul {
+          li {
+            &::before {
+              background-color: #ffffff;
+            }
+            font-weight: 600 !important;
+          }
+        }
+      }
+    }
+    &.blue {
+      li {
+        &::before {
+          background-color: $medusaSecondary;
+        }
+        font-weight: 600 !important;
+        ul {
+          li {
+            &::before {
+              background-color: $medusaSecondary;
+            }
+            font-weight: 600 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .section.why-medusa {
+    background-image: url(/images/medusa/bg2.png);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 992px) {
+      background-image: url(/images/medusa/bg-2.png);
+    }
+    .why-medusa-images {
+      position: relative;
+      padding-top: 30%;
+      .why-medusa {
+        max-width: 70%;
+        height: auto;
+        border-radius: 22px;
+      }
+      .why-medusa-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .why-medusa-2 {
+        position: relative;
+        left: 30%;
+        z-index: 2;
+      }
+    }
+  }
+  .section.medusa-teams {
+    background-image: url(/images/medusa/our-teams.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .team-names {
+      .team-name {
+        font-family: Industry-Bold;
+        font-weight: normal;
+        font-size: 45px;
+        line-height: 80px;
+        letter-spacing: 3px;
+        padding: 0 10px;
+        color: #ffffff;
+        margin: 50px 0;
+        border-right: 2px solid $medusaPrimary;
+        @media screen and (max-width: 767px) {
+          font-size: 24px;
+          line-height: 40px;
+          letter-spacing: 0px;
+          padding: 0 8px;
+        }
+        &.border-end {
+          border-right: 2px solid $medusaPrimary !important;
+        }
+        &:last-child,
+        .border-end-0 {
+          border-right: none;
+        }
+      }
+    }
+  }
+  .section.medusa-season-format {
+    background-image: url(/images/medusa/season-format.png);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    background-repeat: no-repeat;
+    .season-tabs {
+      .tab-headers {
+        display: flex;
+        justify-content: space-between;
+        // @media screen and (max-width: 767px) {
+        //   flex-direction: column;
+        // }
+        .tab-header {
+          //   width: 32%;
+          height: 230px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 70px;
+          margin-bottom: 20px;
+          text-align: center;
+          font-family: Industry-Bold;
+          color: $medusaSecondary;
+          font-size: 45px;
+          line-height: 45px;
+          letter-spacing: 4px;
+          background-color: #fff;
+          cursor: pointer;
+          transition: ease 0.2s all;
+          &.tab-header-2,
+          &.tab-header-4 {
+            background-color: $medusaPrimary;
+            color: #ffffff;
+          }
+          //   &.tab-header-3 {
+          //     background-color: #ffffff;
+          //     color: $medusaSecondary;
+          //   }
+          //   &.tab-header-3 {
+          //     background-color: #ffffff;
+          //     color: $medusaSecondary;
+          //   }
+          @media screen and (max-width: 567px) {
+            height: auto;
+          }
+          &.active {
+            // padding-bottom: 120px;
+            height: 250px;
+            margin-bottom: 0;
+            @media screen and (max-width: 567px) {
+              height: auto;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            padding: 10px 10px;
+            margin-bottom: 5px;
+            // font-size: 20px;
+            // line-height: 20px;
+            letter-spacing: 3px;
+
+            &.active {
+              padding-bottom: 10px;
+              //   margin-bottom: 5px;
+              border: none !important;
+            }
+          }
+        }
+      }
+      .tab-body {
+        .single-tab {
+          display: none;
+          color: $medusaSecondary;
+          background-color: #ffffff;
+          padding: 15px;
+          &.single-tab-2,
+          &.single-tab-4 {
+            background-color: $medusaPrimary;
+            color: #fff;
+          }
+          &.single-tab-3 {
+            // background-color: #ffffff;
+            // color: $medusaSecondary;
+            .mini-title {
+              //   color: $medusaSecondary;
+            }
+          }
+          .mini-title {
+            font-family: "Evogria", sans-serif;
+            // color: $medusaSecondary;
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            @media screen and (max-width: 767px) {
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .section.medusa-blog {
+    background-image: url(/images/poseidon/poseidon-blog.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    .blog-post {
+      background: #ffffff;
+      box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.05);
+      border-radius: 22px;
+      .img {
+        border-radius: 22px 22px 0 0;
+      }
+    }
+  }
+  .section.arete-network {
+    background-image: url(/images/medusa/arete-network.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    .arete-network-img {
+      border-radius: 50%;
+      @media screen and (max-width: 767px) {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .section.arete-partner-club {
+    background-image: url(/images/medusa/partner-club.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  .newsletter {
+    .container {
+      margin: -80px auto -130px;
+      border-radius: 22px;
+      padding: 50px 0px;
+      width: 70%;
+      z-index: 3;
+      background-color: $medusaSecondary;
+
+      .newsletter-inner {
+        flex-direction: column;
+        margin: auto;
+        max-width: 70%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .container {
+        margin: -100px auto -130px;
+        border-radius: 22px;
+        padding: 50px 0px;
+        width: 100%;
+        z-index: 3;
+        background-color: $medusaSecondary;
+        .newsletter-inner {
+          flex-direction: column;
+          margin: auto;
+          max-width: 70%;
+        }
+      }
+    }
+  }
+  .footer-medusa {
+    background-color: $medusaPrimary;
+    padding-top: 100px;
+  }
+  .bottom-bar {
+    .container {
+      border-top: 1px solid #ffffff;
+    }
+    background-color: $medusaPrimary;
+  }
+}
+.section.hero-medusa {
+  background-image: url(/images/medusa/hero-img1.png);
+  background-size: cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  .medusa-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    @media screen and (max-width: 767px) {
+      left: auto;
+      right: 60%;
+      height: 80%;
+      top: 15%;
+    }
+  }
+  .container {
+    z-index: 2;
+    position: relative;
+  }
+  .sub-title {
+    font-family: "Evogria", sans-serif;
+    font-weight: normal !important;
+    font-size: 70px;
+    line-height: 85px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .hero-img {
+    margin-top: 25px;
+  }
+  .title {
+    font-family: "Evogria", sans-serif;
+    font-weight: normal !important;
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 4px;
+
+    span {
+      font-size: 140%;
+      letter-spacing: 15px;
+      padding-left: 14px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 25px 0;
+    text-align: center;
+    .title {
+      font-size: 35px;
+      line-height: 45px;
+      span {
+        letter-spacing: 11px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+u {
+  //   background-color: $medusaPrimary;
+  text-decoration: $medusaPrimary underline;
+}
+.md-client-slider {
+  width: 60%;
+  margin: auto;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.md.newsletter {
+  .newsletter-inner {
+    display: flex;
+    align-items: center;
+    .icon-wrap {
+      margin-right: 15px;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .h2 {
+      flex-shrink: 0;
+      margin-right: 35px;
+    }
+    .form-wrapper {
+      position: relative;
+      height: 100%;
+      .loading {
+        position: absolute;
+        display: flex;
+        border-radius: 25px;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        font-weight: bold;
+        z-index: 99;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .input-group {
+        height: 50px;
+      }
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      .form-control:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+        display: block;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+      }
+      .input-group-btn {
+        position: absolute;
+        right: 0px;
+        height: 50px;
+        top: 0px;
+        z-index: 20;
+
+        .btn {
+          border-radius: 10px;
+          width: 100%;
+          height: 100%;
+          padding: 5px 25px;
+          z-index: 20;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .icon-wrap {
+        width: 100%;
+        flex-shrink: 1;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+        img {
+          width: 90px;
+          height: 90px;
+          display: inline;
+        }
+      }
+      .h2 {
+        width: 100%;
+        flex-shrink: 1;
+        margin-right: 0;
+        text-align: center;
+      }
+      .form-wrapper {
+        margin-top: 10px;
+        width: 100%;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+.md-fw-light {
+  font-weight: 300 !important;
+}

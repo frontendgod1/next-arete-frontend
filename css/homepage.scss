@@ -1,0 +1,585 @@
+.section.hero {
+  background-image: url(/images/home-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  
+  &.hero-half {
+    background-image: url(/images/home-hero-bg.jpg);
+    min-height: 50vh;
+  }
+  .sub-title {
+    font-family: 'KoHo', sans-serif;
+    font-size: 70px;
+    line-height:85px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .container {
+    padding-top:0;
+    padding-bottom: 0;
+  }
+  .hero-img {
+    margin-top: 25px ;
+  }
+  .title {
+    font-family: 'KoHo', sans-serif;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+
+  }
+  .buttons  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .btn {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 25px 0;
+    text-align: center;
+    .title {
+      font-size: 35px;
+      line-height:45px;
+    }
+    .buttons  {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .btn {
+        width: 100%;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+
+}
+
+@keyframes(show-content) {
+  0% {
+    max-height: 0;
+    display: none;
+  }
+  2% {
+    max-height: 0;
+    display: block;
+  }
+  100% {
+    max-height: 1500px;
+  }
+}
+.section.arete-main {
+  .image-text-block {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    .inner-box {
+      z-index: 5;
+      position: absolute;
+      width: 100%;
+      padding: 80px 25px 50px;
+      display: flex;
+      align-items: flex-start;
+      z-index: 5;
+      bottom: 0;
+      left: 0;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(0deg, rgba(0,0,0,0.65), transparent);
+      color: #f0f0f0;
+      .h3 {
+        color: #ffffff;
+
+      }
+
+    }
+    .image-box {
+      position: relative;
+        .img {
+            width: 100%;
+            height: auto;
+            transition: all .5s ease;
+
+        }
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .text-box {
+        background-color: $primary;
+        margin: -30px auto 0;
+        width: 65%;
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        z-index: 10;
+        color: #ffffff;
+        padding: 12px;
+        transition: all .5s ease;
+        &:hover {
+        }
+    }
+    &:hover {
+        .text-box {
+            transform: translateY(0px);
+            background-color: #333333;
+
+        }
+        .image-box {
+            .img {
+                transform: scale(1.05);
+
+            }
+        }
+    }
+
+}
+
+}
+@keyframes popupanimation {
+  0% {
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.popup-wrapper {
+  position: fixed;
+  background: rgba(0,0,0,0.6);
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  .popup {
+    background: #fff;
+    padding:40px 15px;
+    border-radius: 25px;
+    position: relative;
+    width: 720px;
+    max-width: 95%;
+    animation-name: popupanimation;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    .close-btn {
+      cursor: pointer;
+      position: absolute;
+      top:-10px;
+      right: -10px;
+      border-radius: 5px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      background: $secondary;
+      line-height: 40px;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}
+.sport-management-small {
+  position: relative;
+  z-index: 2;
+  .sport-management-small-img {
+    margin: -60px 20px -60px 0;
+    position: relative;
+    border: 2px solid #ffffff;
+    border-radius: 0;
+    z-index: 2;
+    @media (max-width:767px) {
+      margin:0 0 20px;
+      border: 1px solid #ffffff;
+
+    }
+  }
+}
+.section.dark {
+  @media(max-width:767px) {
+    overflow: hidden;
+  }
+  .container {
+    
+    position: relative;
+    .player {
+      position: absolute;
+      height: 80%;
+      top: 5%;
+      left: -5%;
+      width: auto;
+      filter: grayscale(1);
+      &.player-right {
+        left: auto;
+        right: -5%;
+      }
+      @media(max-width:767px) {
+        height: auto;
+        width: 100%;
+        left: auto;
+        right: 70%;
+        &.player-right {
+          right: auto;
+          left: 70%;
+        }
+  
+      }
+    } 
+    .row {
+      z-index: 2;
+      position: relative;
+
+    } 
+  }
+}
+.section.dark.our-partners {
+  .container {
+    .arete-hq {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 4px rgba(136, 136, 136, 0.25);
+      margin-bottom: -150px;
+      img {
+        border-radius: 0 5px 5px 0;
+      }
+      .section-title, .text { 
+        color: #231F20
+      }
+      .left-part {
+        padding: 25px 25px;
+      }
+    }
+  }
+  margin-bottom: 90px;
+  @media(max-width:767px) { 
+    margin-bottom: 0;
+    .container {
+      .arete-hq {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.section.contact-us {
+  position: relative;
+  &:before {
+    content: "";
+    width:100%;
+    height: 60%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-image: url(/images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .contacts-left {
+    border-radius: 5px 0 0 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .contact-info {
+      display: block;
+      text-decoration: none;
+      transition: all .3s ease;
+      &:hover {
+        background-color: #151515;
+      }
+      .text,.h3 {
+        color: #ffffff;
+      }
+      .icon {
+        margin-bottom: 10px;
+      }
+      padding: 20px 20px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #18ADDD;
+      }
+    }
+    @media(max-width: 767px) {
+      border-radius: 5px 5px 0 0;
+      margin: 20px 25px 0;
+      width: 90%;
+    }
+  }
+  .contacts-right {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(132, 132, 132, 0.25);
+    border-radius: 5px;
+    padding: 35px 25px;
+    .section-title {
+      margin-bottom: 15px;
+    }
+    .form-group {
+      width: 100%;
+      .styled-input {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 10px 15px;
+        font-size: 25px;
+        border: none;
+        border-bottom: 1px solid #D9D9D9;
+      }
+    }
+    .btn {
+      font-size: 25px;
+    }
+    @media(max-width: 767px) {
+      border-radius: 5px 5px 0 0;
+      margin: 0px 0px 0;
+      width: 100%;
+    }
+
+  }
+  &.contact-us-page {
+    margin-bottom: 0px;
+    padding-top: 160px;
+    padding-bottom: 200px;
+    iframe {
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      bottom: 0;
+    }
+    @media(max-width: 767px) {
+      .container {
+        padding-bottom: 0;
+      }
+  
+      padding-top: 80px;
+      padding-bottom: 0;
+      &::before {
+        height: 100%;
+      }
+      iframe {
+        position: relative;
+        height: 500px;
+      }
+    }
+  }
+
+}
+.location {
+}
+.section.apparel-hero {
+  .container {
+    padding: 110px 15px 60px;
+  }
+  background-image: url(/images/apparel-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  .section-title {
+    color: #fff;
+  }
+}
+.section.arete-clothing {
+  .container-fluid {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+#client-numbers {
+  padding: 20px 0;
+  overflow: visible;
+  z-index: 2;
+  .slick-slider {
+    overflow: visible;
+
+    .slick-list {
+      overflow: visible;
+      .slick-track {
+        overflow: visible;
+
+      }
+    }
+  }
+  .flipbox {
+    max-width: 550px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    transform-origin: center;
+    min-height: 100%;
+    transform: scale(0.9);
+    padding-top: 150%;
+    @media(max-width: 767px) {
+      padding-top: 160%;
+    }
+    transition: all .5s ease;
+    .flipbox-inner {
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      &:hover {
+        transform:rotateY(20deg);
+      }
+      .side {
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        border-radius: 25px;
+      }
+      .outer-side {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer;
+
+        .logo {
+          max-height: 140px;
+          max-width: 80%;
+        }
+      }
+      .inner-side {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        transform: rotateY(180deg);
+        color: #fff;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .number {
+          font-size: 85px;
+          line-height: 85px;
+          font-weight: 700;
+          margin: 0 0 10px;
+        }
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+          margin: 10px 0 10px;
+        }
+        .info {
+          font-size: 15px;
+          margin: 0 0 10px;
+        }
+        .logo {
+          margin: 25px auto 15px;
+          max-width: 75%;
+          max-height: 120px;
+        }
+        @media(max-width: 767px) {
+          padding: 20px 15px;
+
+          .number {
+            font-size: 65px;
+            line-height: 65px;
+            font-weight: 700;
+            margin: 0 0 10px;
+          }
+          .title {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 5px 0 5px;
+          }
+          .info {
+            font-size: 15px;
+            margin: 0 0 10px;
+          }
+
+        }
+      }
+    }
+  }
+  .slick-center {
+
+    .flipbox {
+      transform: scale(1);
+      width: 120% !important;
+      display: inline-block;
+      left: -10%;
+      position: relative;
+      z-index: 2;
+
+      .flipbox-inner {
+        transform: rotateY(180deg) ;
+      }
+    }
+  }
+}
+.sport-management-homepage {
+  position: relative;
+  .sport-management-img {
+    width: 100%;
+    padding: 5%;
+  }
+  .logo-block {
+    position: absolute;
+    background-color: #ffffff;
+    width: 26%;
+    height: 11%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    left: 0;
+    top: 39%;
+    transition: all .3s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      background-color: #151515;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    &.logo-block-2 {
+      top: 62%;
+      left: 3%;
+    }
+    &.logo-block-3 {
+      top: 39%;
+      left: auto; 
+      right: 0%;
+    }
+    &.logo-block-4 {
+      top: 62%;
+      left: auto; 
+      right: 3%;
+    }
+    &.logo-block-5 {
+      top: 89%;
+      left: 37%;
+    }
+
+  }
+}

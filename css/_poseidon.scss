@@ -1,0 +1,387 @@
+$poseidonPrimary: #6BDAD5;
+$poseidonSecondary: #021D49;
+.poseidon {
+    color: #8E8E8E;
+    .bg-primary {
+        background-color: $poseidonPrimary !important;
+    }
+    .btn-secondary {
+        background-color: $poseidonSecondary;
+        border-color: $poseidonSecondary;
+    }
+    .btn-outline-primary {
+        border-color: $poseidonPrimary;
+        color: $poseidonPrimary;
+        &:hover {
+            background-color:$poseidonSecondary;
+            border-color: $poseidonSecondary;
+            color: #ffffff;
+        }
+    }
+    a {
+        color: $poseidonPrimary;
+        text-decoration: none;
+    }
+    .btn-primary {
+        background-color: $poseidonPrimary;
+        border-color: $poseidonPrimary;
+        color: #ffffff;
+
+        &:hover {
+            background-color:$poseidonSecondary;
+            border-color: $poseidonSecondary;
+            color: #ffffff;
+        }
+    }
+    .section-title {
+        color: #021D49;
+        font-family: 'Evogria', sans-serif;
+        font-weight: normal !important;
+        letter-spacing: 3px;
+        span {
+            position: relative;
+            display: inline-block;
+            &::after {
+                content:"";
+                display: block;
+                width: 99px;
+                height: 3px;
+                background-color: #6BDAD5;;
+            } 
+        }
+    }
+    ul.poseidon-list {
+        list-style: none; 
+        padding-left: 20px;
+        li {
+            position: relative;
+            margin: 5px 0;
+            &::before {
+                content: "";
+                background-color:$poseidonPrimary;
+                width: 13px;
+                height: 13px;
+                display: block;
+                position: absolute;
+                left: -20px;
+                top: 6px;
+                border-radius: 50%;        
+            }
+            ul {
+                list-style: none; 
+
+                li {
+                    &::before {
+                        background-color:$poseidonSecondary;
+                        width: 8px;
+                        height: 8px;
+                        left: -16px;
+                        top: 7px;
+                    }
+        
+                }
+            }
+        }
+        &.white {
+            li {
+                &::before {
+                    background-color: #ffffff;
+                }
+                ul {
+                    li {
+                        &::before {
+                            background-color: #ffffff;
+                        }
+                    }        
+                }
+            }
+        }
+    }
+      
+
+      
+      
+    .section.why-poseidon {
+        background-color: #caf2f1;
+        background-image: url(/images/poseidon/why-poseidon.png);
+        background-size: contain;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        .why-poseidon-images {
+            position: relative;
+            padding-top: 15%;
+            .why-poseidon {
+                max-width: 80%;
+                height: auto;
+                border-radius:22px;
+            }
+            .why-poseidon-1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .why-poseidon-2 {
+                position: relative;
+                left: 20%;
+                z-index: 2;
+            }
+        }
+    }
+    .section.poseidon-teams {
+        background-image: url(/images/poseidon/our-teams.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .team-names {
+            
+            .team-name {
+                font-family: 'Evogria', sans-serif;
+                font-weight: normal;
+                font-size: 45px;
+                line-height: 45px;
+                letter-spacing: 3px;
+                padding: 0 10px;
+                color: #ffffff;
+                border-right: 2px solid #6BDAD5;
+                @media screen and (max-width: 767px) {
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    padding: 0 8px;
+                }
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+          
+        }
+    }
+    .section.poseidon-season-format {
+        background-image: url(/images/poseidon/season-format.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .season-tabs {
+            .tab-headers {
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                }
+                .tab-header {
+                    width: 32%;
+                    padding: 100px 15px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-family: 'Evogria', sans-serif;
+                    color: #ffffff;
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: 4px;
+                    background-color: $poseidonSecondary;
+                    cursor: pointer;
+                    transition: ease 0.2s all;
+                    &.tab-header-2 {
+                        background-color: $poseidonPrimary;
+                    }
+                    &.tab-header-3 {
+                        background-color: #ffffff;
+                        color: $poseidonSecondary;
+                    }
+                    &.active {
+                        padding-bottom: 120px;
+                        margin-bottom: 0;
+                    }
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                        padding: 10px 10px;
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                        line-height: 20px;
+                        letter-spacing: 3px;
+
+                        &.active {
+                            padding-bottom: 10px;
+                            margin-bottom: 5px;
+                            border: 1px solid #000;
+                        }
+    
+                    }
+
+                }   
+            }
+            .tab-body {
+                .single-tab {
+                    display: none;
+                    color: #ffffff;
+                    background-color: $poseidonSecondary;
+                    padding: 15px;
+                    &.single-tab-2 {
+                        background-color: $poseidonPrimary;
+                    }
+                    &.single-tab-3 {
+                        background-color: #ffffff;
+                        color: $poseidonSecondary;
+                        .mini-title { 
+                            color: $poseidonSecondary;
+                        }
+                    }
+                    .mini-title {
+                        font-family: 'Evogria', sans-serif;
+                        color: #ffffff;
+                        font-size: 24px;
+                        line-height: 24px;
+                        margin-bottom: 10px;
+                        @media screen and (max-width: 767px) {
+                            font-size: 18px;
+                            line-height: 18px;
+    
+                        }
+                    }
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .section.poseidon-blog {
+        background-image: url(/images/poseidon/poseidon-blog.jpg);
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        padding-top: 80px;
+        .blog-post {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.05);
+            border-radius: 22px;
+            .img {
+                border-radius: 22px 22px 0 0;
+            }
+        }
+    }
+    .section.arete-network {
+        background-image: url(/images/poseidon/arete-network.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+
+        }
+        
+        .arete-network-img {
+            border-radius: 50%;
+            @media screen and (max-width: 767px) {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section.arete-partner-club {
+        background-image: url(/images/poseidon/partner-club.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+
+    }
+    .newsletter {
+        .container {
+            margin: -50px auto -100px;
+            border-radius: 22px;
+            z-index: 3;
+            background-color: $poseidonPrimary;
+            .newsletter-inner {
+                flex-direction: column;
+                margin: auto;
+                max-width: 700px;
+            }
+        }
+    }
+    .footer-poseidon {
+        background-color: $poseidonSecondary;
+        padding-top: 100px;
+    }
+    .bottom-bar {
+        .container {
+            border-top: 1px solid #FFFFFF;
+        }
+        background-color: $poseidonSecondary;
+    }
+}
+.section.hero-poseidon {
+    background-image: url(/images/poseidon/poseidon-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    .poseidon-overlay {
+        position: absolute;
+        left:0;
+        top:0;
+        width: auto;
+        height: 100%;
+        @media screen and (max-width: 767px) {
+            left: auto;
+            right: 60%;
+            height: 80%;
+            top: 15%;
+        }
+    }
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+    .sub-title {
+      font-family: 'Evogria', sans-serif;
+      font-weight: normal !important;
+      font-size: 70px;
+      line-height:85px;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    .container {
+      padding-top:0;
+      padding-bottom: 0;
+    }
+    .hero-img {
+      margin-top: 25px ;
+    }
+    .title {
+      font-family: 'Evogria', sans-serif;
+      font-weight: normal !important;
+      font-size: 70px;
+      line-height: 80px;
+      letter-spacing: 4px;
+
+      span {
+        font-size: 140%;
+        letter-spacing: 15px;
+        padding-left: 14px;
+      }
+    }
+  
+    @media screen and (max-width: 767px) {
+      padding: 50px 25px 0;
+      text-align: center;
+      .title {
+        font-size: 35px;
+        line-height:45px;
+        span {
+            letter-spacing: 11px;
+            padding-left: 10px;
+          }
+    
+      }
+  
+    }
+  
+  }
+  

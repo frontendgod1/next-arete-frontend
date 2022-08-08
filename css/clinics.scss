@@ -1,0 +1,154 @@
+ #hero-clinics.section.hero {
+    background-image: url(/images/arete-boys-clinics.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+    .sub-title {
+      font-family: 'KoHo', sans-serif;
+      font-size: 70px;
+      line-height:85px;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    .container {
+      padding-top:0;
+      padding-bottom: 0;
+    }
+    .hero-img {
+      margin-top: 25px ;
+    }
+    .title {
+      font-family: 'KoHo', sans-serif;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 700;
+      font-style: italic;
+    }
+    .text {
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .buttons  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .btn {
+        width: 48%;
+        &:hover {
+          background-color: #000000;
+          border-color: #000000;
+          color: #ffffff;
+        }
+
+      }
+    }
+  
+    @media (max-width: 767px) {
+      padding: 50px 25px 50px;
+      text-align: center;
+      .title {
+        font-size: 35px;
+        line-height:45px;
+      }
+      .buttons  {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .btn {
+          width: 100%;
+          flex-shrink: 0;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+  
+    }
+  
+}
+.btn.btn-skewed {
+    transform: skewX(-30deg);
+    span {
+        transform: skewX(30deg);
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+    
+    }
+}
+.section.your-benefits {
+
+  .benefits-text {
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    font-family: 'KoHo', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    @media screen and (min-width: 992px) {
+      writing-mode: vertical-lr;
+      font-size: 55px;
+      color: rgba(255, 255, 255, 0.09);
+      transform: rotate(180deg);
+  
+    }
+  }
+
+}
+.section.enroll-now {
+    background-image: url(/images/enroll-boys-clinics.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    .h2 {
+        font-size: 42px;
+        line-height: 55px;
+
+    }
+    .h1 {
+        font-size: 75px;
+        line-height: 85px;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+    }
+    .btn {
+      min-width: 35%;
+      &:hover {
+        background-color: #000000;
+        border-color: #000000;
+        color: #ffffff;
+      }
+
+  }
+
+    @media (max-width: 767px) {
+      text-align: center;
+      .h2 {
+        font-size: 35px;
+        line-height: 45px;
+
+      }
+      .h1 {
+          font-size: 45px;
+          line-height: 55px;
+      }
+
+      .btn {
+          min-width: 60%;
+          width: auto;
+          
+      }
+    }
+
+}

@@ -1,0 +1,247 @@
+.newsletter {
+  .newsletter-inner {
+    display: flex;
+    align-items: center;
+    .icon-wrap {
+      margin-right: 15px;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .h2 {
+      flex-shrink: 0;
+      margin-right: 35px;
+    }
+    .form-wrapper {
+      position: relative;
+      height: 100%;
+      .loading {
+          position: absolute;
+          display: flex;
+          border-radius: 25px;
+
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255,255,255,0.9);
+          font-weight: bold;
+          z-index: 99;
+          font-size: 30px;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+      .input-group {
+        height: 70px;
+
+      }
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      .form-control:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+        display: block;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+
+      }
+      .input-group-btn {
+        position: absolute;
+        right: 10px;
+        height: 50px;
+        top: 10px;
+        z-index: 20;
+
+        .btn {
+          border-radius: 5px;
+          width: 100%;
+          height: 100%;
+          padding: 5px 25px;
+          z-index: 20;
+
+        }
+      }
+    }
+    @media (max-width:767px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .icon-wrap {
+        width: 100%;
+        flex-shrink: 1;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+        img {
+          width: 90px;
+          height: 90px;
+          display: inline;
+        }
+      }
+      .h2 {
+        width: 100%;
+        flex-shrink: 1;
+        margin-right: 0;
+        text-align: center;
+      }
+      .form-wrapper {
+        margin-top: 10px;
+        width: 100%;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+.main-footer {
+  background: #111111;
+  
+  color: #fff;
+  padding: 0;
+  position: relative;
+  .container {
+    z-index: 3;
+    position: relative;
+  }
+  @media(max-width: 767px) {
+    padding: 40px 0;
+  }
+  .nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  .footer-elements {
+    
+    height: 100%;
+    background: #231F20;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    display: block;
+    .main {
+      padding: 35px 25px;
+      .footer-logo {
+        margin-bottom: 20px;
+      }
+    }
+    .phone-box {
+      background-color: #393637;
+      color: #fff;
+      display: flex;
+      padding: 10px 15px;
+      border-radius: 0 0 5px 5px;
+      text-decoration: none;
+      justify-content: space-between;
+      align-items: center;
+      .icon-box {
+        width: 55px;
+        height: 55px;
+        line-height: 35px;
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $primary;
+        flex-shrink: 0;
+        margin-left: 10px;
+      }
+      .text {
+        text-align: left;
+        flex-grow: 1;
+        .subtitle {
+          font-weight: 400;
+        }
+      }
+    }
+    .icons {
+      svg {
+        width: 40px;
+        height: 40px;
+        margin: 15px 5px 5px;
+        color: #fff;
+      }
+    }
+    @media(max-width: 767px) {
+      flex-direction: row;
+    }
+  }
+  .footer-menu-col {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .footer-line {
+      width: 50px;
+      height: 4px;
+      background-color: $primary;
+      margin: 10px 0;
+    }
+    .nav-link {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      svg {
+        color: $primary;
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.bottom-bar {
+  background: #2B2B2B;
+  color: #ffffff;
+  .row {
+    align-items: center;
+  }
+  .center {
+    
+    p {
+      margin: 0;
+    }
+  }
+  .right {
+    padding: 20px 0;
+    text-align: right;
+    .nav-link {
+      color: #fff;
+      text-transform: none;
+    }
+    .nav {
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 767px) {
+      padding: 20px 0;
+      text-align: center;
+      .nav {
+        justify-content: center;
+      }
+    }
+
+  }
+  .left {
+    padding: 20px 0;
+    p {
+      margin: 0;
+    }
+  @media (max-width: 767px) {
+
+      background: #191919;
+      text-align: center;
+
+    }
+  }
+  .social-icons {
+    svg {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      color: #fff;
+    }
+  }
+
+
+}
